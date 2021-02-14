@@ -17,10 +17,10 @@ class BsespiderSpider(scrapy.Spider):
             Deal_Date = row.css('.tdcolumn:nth-child(1)::text').extract_first()
             Security_Code= row.css('.tdcolumn:nth-child(2)::text').extract_first()
             Security_Name= row.css('.TTRow_left::text').extract_first()
-            Client_Name= row.css('#ContentPlaceHolder1_gvbulk_deals .text-left::text').extract_first()
+            Client_Name= row.css('.text-left::text').extract_first()
             Deal_Type= row.css('.text-left+ .tdcolumn::text').extract_first()
             Quantity= row.css('.text-right:nth-child(6)::text').extract_first()
-            Price= row.css('#ContentPlaceHolder1_gvbulk_deals .text-right+ .text-right::text').extract_first()
+            Price= row.css('.text-right+ .text-right::text').extract_first()
 
 
             item['Deal_Date'] = Deal_Date
