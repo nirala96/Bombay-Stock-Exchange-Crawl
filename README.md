@@ -13,3 +13,7 @@ Used Scrapy to Scrape details of the [BSE India](https://www.bseindia.com/market
 scrapy crawl bsespider -o BSEOutput.csv
 ```
 
+## Prerequisite
+- pyhton3
+- Scrapy
+- urllib
