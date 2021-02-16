@@ -14,6 +14,6 @@ scrapy crawl bsespider -o BSEOutput.csv
 ```
 
 ## Prerequisite
-- pyhton3
+- python3
 - Scrapy
 - urllib
